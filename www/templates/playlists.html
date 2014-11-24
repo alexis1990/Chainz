@@ -1,0 +1,30 @@
+<ion-view title="Playlists">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <div ng-controller="mapCtrl">
+            <!-- GOOGLE MAP -->
+            <div id="map" data-tap-disabled="true">
+            </div>
+        </div>
+
+        <!-- Capture video button -->
+        <button class="takeVideo button" ng-click="captureVideo()"> Take Video </button>
+        <button class="continueVideo button" ng-click="continueVideo()">Continue Video</button>
+
+        <!-- Mobile console -->
+        <div id="console"></div>
+
+        <!-- VIDEO PLAYER -->
+        <video id="video" class="affichageVideo hidden" controls>
+            <source src='' type='video/mp4'/>
+            <p>Your user agent does not support the HTML5 Video element.</p>
+        </video>
+
+        <div id="fb-root"></div>
+        <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
+        <div id="status"></div>
+
+    </ion-content>
+</ion-view>
