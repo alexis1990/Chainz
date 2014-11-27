@@ -9,7 +9,7 @@
 }
 
 .hidden{
-	visibility: hidden;
+	display: none;
 }
 
 #video{
@@ -26,10 +26,9 @@
 }
 
 .takeVideo{
-	float: right;
-	margin-right: 10px;
+	position: absolute;
+	z-index: 30;
 }
 .continueVideo{
 	float: left;
-	margin-left: 100px;
 }

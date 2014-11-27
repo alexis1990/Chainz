@@ -1,24 +1,22 @@
 app.factory('videosFactory', function($http) {
-    var serverURL = "http://192.168.1.41";
+    var serverURL = "http://10.30.1.49:3000";
     // var videos = [];
 
     return {
         videos: [],
 
-        // Get Videos from server
         getVideos: function() {
             var self = this;
             // self.videos = [];
-            // Get datas from server
             return $http({
-                url: serverURL + ":3000/video",
+                url: serverURL + "/video",
                 method: 'GET'
             }).success(function(data) {
                 self.videos = data;
+                console.log('self.videos', self.videos);
             })
         },
 
-        // Add video (here, launch get data again)
         addVideo: function(video) {
             this.getVideos();
         }
