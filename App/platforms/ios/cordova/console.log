@@ -1,0 +1,19 @@
+2014-10-22 23:16:37.213 CadExq[24031:601079] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/alexandre/Library/Developer/CoreSimulator/Devices/89D0E6C9-8CF2-416E-890E-B32BDB7290FF/data/Containers/Data/Application/37FF51EE-862A-4F28-929F-42A7C88B2A58/Library/Cookies/Cookies.binarycookies
+2014-10-22 23:16:37.293 CadExq[24031:601079] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-22 23:16:37.293 CadExq[24031:601079] Multi-tasking -> Device: YES, App: YES
+2014-10-22 23:16:37.311 CadExq[24031:601079] Unlimited access to network resources
+2014-10-22 23:16:37.689 CadExq[24031:601079] [CDVTimer][keyboard] 0.055969ms
+2014-10-22 23:16:37.692 CadExq[24031:601079] [CDVTimer][file] 3.156960ms
+2014-10-22 23:16:37.692 CadExq[24031:601079] [CDVTimer][TotalPluginStartup] 3.467023ms
+2014-10-22 23:16:38.299 CadExq[24031:601079] Resetting plugins due to page load.
+2014-10-22 23:16:38.467 CadExq[24031:601079] Finished load of: file:///Users/alexandre/Library/Developer/CoreSimulator/Devices/89D0E6C9-8CF2-416E-890E-B32BDB7290FF/data/Containers/Bundle/Application/9766C098-B7A7-4377-959A-97065FE3D7AB/CadExq.app/www/index.html
+2014-10-22 23:28:19.529 CadExq[24795:606240] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/alexandre/Library/Developer/CoreSimulator/Devices/89D0E6C9-8CF2-416E-890E-B32BDB7290FF/data/Containers/Data/Application/7798B064-FD22-4FCB-A335-18BCF74311D6/Library/Cookies/Cookies.binarycookies
+2014-10-22 23:28:19.600 CadExq[24795:606240] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-22 23:28:19.600 CadExq[24795:606240] Multi-tasking -> Device: YES, App: YES
+2014-10-22 23:28:19.605 CadExq[24795:606240] Unlimited access to network resources
+2014-10-22 23:28:19.750 CadExq[24795:606240] [CDVTimer][keyboard] 0.051022ms
+2014-10-22 23:28:19.752 CadExq[24795:606240] [CDVTimer][file] 1.718998ms
+2014-10-22 23:28:19.752 CadExq[24795:606240] [CDVTimer][TotalPluginStartup] 2.012014ms
+2014-10-22 23:28:19.786 CadExq[24795:606240] Resetting plugins due to page load.
+2014-10-22 23:28:19.886 CadExq[24795:606240] Finished load of: file:///Users/alexandre/Library/Developer/CoreSimulator/Devices/89D0E6C9-8CF2-416E-890E-B32BDB7290FF/data/Containers/Bundle/Application/5BFA544A-4802-470B-A202-7FA5B143FBE9/CadExq.app/www/index.html
+2014-10-22 23:29:00.154 CadExq[24795:606445] Terminating since there is no system app.

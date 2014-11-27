@@ -1,0 +1,54 @@
+.box-login .box-form{position:relative;display:block;margin-bottom:40px;padding:35px 70px;background-color:#f1f1f1;border-radius:2px}
+.box-login .box-form p:last-child{margin-bottom:0}
+.box-login .box-form .text-input{width:100%}
+.box-login .box-form .text-input:focus{border-color:#3c948b;outline:0}
+.box-login .box-form h2{text-align:left}
+.box-login .button{width:100%;padding:0;text-align:center}
+.box-login h2:last-child a{font-weight:normal;text-decoration:underline}
+.box-login h2:last-child a:hover{text-decoration:none}
+.box-login .agree,.box-login .alerts{overflow:hidden;font-size:14px}
+.box-login .alerts{margin-bottom:20px}
+.box-login .alerts span,.box-login .alerts li{color:#c00}
+.box-login .alerts li{margin-bottom:5px;font-weight:bold}
+.box-login .alerts li:last-child{margin-bottom:0}
+.box-login .alerts a,.box-login .agree a{text-decoration:underline;color:#444}
+.box-login .alerts a{float:right}
+.box-login .alerts a:hover,.box-login .agree a:hover{text-decoration:none}
+.box-review{position:relative;display:block;margin-bottom:20px;padding:35px;background-color:#f1f1f1;overflow:hidden;border-radius:2px}
+box-login{max-width:610px;margin:0 auto;padding-bottom:20px;overflow:hidden}.box-login .head{text-align:center}
+.box-login .head h2{margin-bottom:10px}
+.box-login .socialconnect{margin-bottom:30px}
+.box-login .socialconnect:after{content:'';display:block;clear:both}
+.box-login .socialconnect a.facebook{
+	margin: 0 auto;
+	display: block;
+}
+.box-login .socialconnect a.twitter{float:right}
+.box-review h3{text-align:left;font-weight:normal;font-size:1em;font-style:italic;color:#3c948b}
+.box-review .col{float:left;width:56%;margin:0;text-align:left}
+.box-login .socialconnect a:hover {
+	text-decoration: none;
+	color:#fff;
+}
+.inner.width-2 {
+width: 870px;
+margin:0 auto;
+}
+.text-input {
+display: block;
+height: 46px;
+padding: 0 15px;
+background: #f4f4f4;
+line-height: 46px;
+font-size: 17px;
+border: 1px solid #d6d6d6;
+border-radius: 2px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-ms-transition: all .2s linear;
+transition: all .2s linear;
+}

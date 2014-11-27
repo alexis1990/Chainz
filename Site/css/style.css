@@ -1,0 +1,536 @@
+/* =Reset default browser CSS
+-------------------------------------------------------------- */
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, iframe, img, ins, kbd, samp, small, strong, sub, sup, tt, var, b, i, dl, dt, dd, object, ol, ul, li, form, label, legend, span, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-color: transparent;
+	background-position: top left;
+	background-repeat: no-repeat;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family: 'gothic', Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+em, address, big, strong, cite, code, tt, var {
+	font-style: normal;
+	font-family: 'gothic', Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+/* Standard HTML Tag Definition 
+-------------------------------------------------------------- */
+body,
+form, input, select, textarea, fieldset, button {
+	color: #000000;
+	font-family: 'gothic', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	background-image: url('../images/backround-site.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color:#fff;
+}
+
+body {
+	background-color:transparent!important;
+}
+@font-face {
+	font-family: 'gothic';
+	src: url('../fonts/gothic.eot');
+	src: local('gothic'), url('../fonts/gothic.woff') format('woff'), url('../fonts/gothic.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_9785">Text with this font applied</p> */
+.fontsforweb_fontid_9785 {
+	font-family: 'gothic' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+/* =Custom Classes
+-------------------------------------------------------------- */
+.clear {
+	clear: both;
+}
+
+/* =Layout
+-------------------------------------------------------------- */
+#wrapper {
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	
+}
+
+/* =Header
+-------------------------------------------------------------- */
+#header {
+	position: relative;
+	width:100%;
+	float:left;
+}
+.backround-image {
+	margin:0 auto;
+	display:block;
+}
+
+#header p {
+	font-size:24px;
+}
+#header p em{
+	font-size:24px;
+	color:#fff;
+}
+#header .navbar-inverse {
+	background-image: url('../images/backround-site.jpg');
+background-repeat: no-repeat;
+background-position: top center;
+	background-color:transparent;
+	border: 0;
+}
+
+#header .navbar-bg {
+	background-image: url('../images/header-bg.png');
+	background-position:top left;
+	background-repeat:repeat-x;
+}
+
+#header p.center {
+	font-size:24px;
+	color:#fff;
+}
+/* .clearfix {
+	width:1680px;
+	float:left;
+} */
+#header .container {
+	width:100%;
+	margin:0 auto;
+}
+
+#header .navbar-header {
+	float:left;
+	width:290px;
+	margin:10px 0;
+}
+
+#header .navbar-header h1 {
+	margin:0;
+}
+
+#header .navbar-header img {
+	float:left;
+}
+
+#header .navbar-brand {
+	padding: 0;
+	height: auto;
+	float: right;
+}
+
+#header .navbar-collapse {
+	float:right;
+	margin: 50px 0 0;
+}
+
+#header .navbar-collapse .navbar-nav {
+	float:right;
+	padding:0;
+	margin:0;
+}
+#header .navbar-collapse .navbar-nav li {
+	float:left;
+	margin:0 2px;
+	display: inline;
+	font-family: 'gothic';
+	font-size:24px;
+}
+
+#header .navbar-collapse .navbar-nav li a{
+	color:#3e3e3e;
+	padding:5px 17px;
+}
+
+#header .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+background-color: transparent;
+}
+/* =Main
+-------------------------------------------------------------- */
+#main {
+	background-color:#fff;
+	clear:both;
+}
+
+#main .content{
+	padding: 50px 0 50px 0;
+}
+#main .content h2{
+	font-size:40px;
+	line-height: 46px;
+	color:#3e3e3e;
+	text-align: center;
+	padding:11px 0;
+	margin-bottom:50px;
+}
+#main .content h2 span{
+	border-bottom:3px solid #000;
+	padding:0 0 23px;
+	display: inline-block;
+}
+
+#main .content .marche-box ul{
+	float:left;
+	padding:0 0 25px 11%;
+}
+
+.top-height {
+	padding-top:100px;
+	padding-bottom:20px;
+}
+
+#main .content .marche-box ul li {
+	float:left;
+	clear:left;
+	margin: 0 0 14px;
+}
+
+#main .content .marche-box ul li h3 {
+	color:#3f4244;
+	font-size:40px;
+	line-height:48px;
+	padding: 0 18px;
+	margin-top:0;
+}
+#main .content .marche-box ul li a {
+	color:#929ba0;
+	font-size:35px;
+	line-height:48px;
+	display:block;
+	padding:7px 0;
+	margin: 0 0 8px;
+}
+
+#main .content .mobils-box img {
+	margin:0 auto;
+	display:block;
+}
+#main .content .mobils-box .desktop-icon {
+	margin-top: 110px;
+	margin-bottom: 113px;
+
+}
+
+#main .content .mobils-box a {
+	border-bottom:3px solid #56d7ff;
+	display:block;
+	width: 222px;
+	padding: 10px 0 17px;
+	margin: 30px auto 40px;
+}
+
+#main .content .mobils-box p {
+	font-size: 24px;
+	color: #000;
+	line-height: 29px;
+	text-align: center;
+	padding: 0 65px;
+	display: block;
+}
+
+#main .content .lequipe-box ul {
+	float:left;
+	width:100%;
+	text-align: center;
+}
+
+#main .content .lequipe-box ul li:first-child{
+margin:0;
+}
+#main .content .lequipe-box ul li{
+	display:inline-block;
+	width:285px;
+	margin-left:30px;
+}
+#main .content .lequipe-box ul li a{
+	display:block;
+	width:100%;
+}
+#main .content .lequipe-box ul li img{
+	margin:0 auto;
+	display:block;
+}
+
+#contacter {
+	background-image: url('../images/backround-site-bottom.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	margin:50px 0 0;
+	padding:160px 0 0;
+}
+
+#contacter h2{
+	font-size:30px;
+	line-height: 46px;
+	color:#fff;
+	text-align: center;
+	padding:11px 0;
+	margin-bottom:50px;
+}
+#contacter h2 span{
+	border-bottom:3px solid #fff;
+	padding:0 0 23px;
+	display: inline-block;
+}
+
+#contacter .contact {
+	width:950px;
+	margin:0 auto;
+}
+
+#contacter .form-group  {
+	float: left;
+	width: 100%;
+	margin: 48px 0;
+	position: relative;
+}
+
+#contacter .textarea-group  {
+	margin: 48px 0 0;
+}
+
+#contacter .form-group label.error  {
+	font-size: 14px;
+	line-height: 20px;
+	color: red;
+	font-weight: normal;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+#contacter .form-control  {
+	font-size: 17px;
+	line-height: 20px;
+	background-color: transparent;
+	border: 0;
+	height:52px;
+	background-image: url('../images/input-border.png');
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	background-size:100% 12px;
+	border-radius: 0;
+	padding-bottom:20px;
+	box-shadow: none;
+	color:#fff;
+}
+
+#contacter .submit  {
+	font-size: 17px;
+	line-height: 20px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	height:59px;
+	background-image: none;
+	border-radius: 0;
+	box-shadow: none;
+	color:#fff;
+	float:right;
+	margin:42px 0;
+	width:202px;
+}
+
+#contacter textarea  {
+	resize:none;
+}
+#contacter ::-webkit-input-placeholder {
+   color: #fff;
+}
+
+#contacter :-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+#contacter ::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+#contacter :-ms-input-placeholder {  
+   color: #fff;  
+}
+
+#contacter .thank_you  {  
+   color: #fff;  
+   font-size: 24px;
+
+	text-align:center;
+	width:100%;
+	margin:0 auto 100px;;
+}
+.sub-page {
+	background-image: url('../images/backround-site.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+.sub-page #wrapper {
+	width: 100%;
+	min-width: 1280px;
+}
+.sub-main {
+	background-color:transparent !important;
+}
+
+.sub-main  .container{
+	width: 100%;
+}
+#main .desktop-box {
+	width: 100%;
+	padding: 0;
+	margin:0;
+	position:relative;
+	float:left;
+}
+
+#main .desktop-box .arrow-button {
+	width: 15px;
+	height: 27px;
+	float: left;
+	background-image: url('../images/arrow-right.png');
+	text-indent: -999999px;
+	margin-left: -0px;
+	cursor:pointer;
+}
+
+#main .desktop-box .content {
+	width: 100%;
+	float: right;
+	position: relative;
+	/* overflow-y: scroll;
+	height: 520px;
+	overflow-x: hidden; */
+	padding: 0 0;
+	
+	
+}
+
+#main .desktop-box .content .header {
+	width: 102%;
+	background-image: url('../images/transparent-bg.png');
+	position: absolute;
+	top: 0;
+	left: -12px;
+	z-index: 10;
+}
+
+#main .desktop-box .content .header img {
+	margin:0 auto;
+	display:block;
+	width:30px;
+}
+#sidebar {
+	background-color:#000;
+}
+.portfolio-item {
+	padding:3px;
+	
+}
+
+
+.portfolio-item .facebook{
+	background-color: #000;
+	display: none;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: -51px;
+	padding: 4px 2px 0;
+	z-index: 9;
+
+}
+
+.portfolio {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+max-height: 300px;
+}
+
+.portfolio img {
+	width:100%;
+	float:left;
+}
+
+.portfolio:hover .facebook {
+	display:block;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+#footer {
+
+}
+.login-box {
+	position: absolute !important;
+	top: 150px;
+	width: 100%;
+}
+
+
+/*...*/
+
+.head{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#fb-root{
+	height: 50px;
+	z-index: 999;
+}
+
+.container{
+	width: 100% !important; 
+}
+
+.backround-image{
+	height: 700px;
+}
+
+.block{
+	margin-top: -50px;
+}
+
+.imgTop{
+	width: 100%;
+	height: 600px;
+}
+
+.fb-login-button{
+	margin-top: 20px;
+	margin-left: 305px;
+}
+
+#status{
+	margin-top: 20px;
+	margin-left: 280px;
+}
+
+.bgImg{
+	width: 100%;
+	height: 300px;
+	background-image:url(images/backround-site.jpg);
+	position: absolute;
+}
