@@ -54,7 +54,7 @@ function countData(dataParse){
 
 function createSource(videos){
 	for(var i in videos){
-		videoSource[i] = serverUrl + ":8888/CadExq/node/uploads/" + videos[i].fileName;
+		videoSource[i] = serverUrl + ":8888/CadExq/App/node/uploads/" + videos[i].fileName;
 	}
 	videoCount = videoSource.length;
 	document.getElementById("video").setAttribute("src",videoSource[0]);

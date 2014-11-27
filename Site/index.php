@@ -9,24 +9,6 @@
 <link rel="stylesheet" type="text/css" href="css/e25a9c0.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
 
-<script type="text/javascript">
-// 		$(document).ready(function() {
-// 				$("#contactForm").validate({	
-// 					rules: {
-// 						votre_prenom: {
-// 							required: true
-// 						},
-// 						votre_mail: {
-// 							required: true,
-// 							email: true
-// 						}, 
-// 						votre_message_ici: {
-// 							required: true
-// 						}
-// 					}
-// 			});
-// 		});
-// 	</script>
 </head>
 <body>
 
