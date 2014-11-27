@@ -1,0 +1,35 @@
+#map { 
+	height: 350px;
+	position: relative;
+}
+.button{
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+#video{
+	z-index: 30;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.btn-facebook{
+	width: 200px;
+	height: 80px;
+	background-color: blue;
+}
+
+.takeVideo{
+	float: right;
+	margin-right: 10px;
+}
+.continueVideo{
+	float: left;
+	margin-left: 100px;
+}
