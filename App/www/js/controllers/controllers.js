@@ -40,7 +40,7 @@ var app = angular.module('starter.controllers', [])
     var positions = {}, // Positions of the user
         idFirstVideo = '', // Id of the first video (video of the marker)
         idFacebook = '', // User facebook id
-        serverAddress = "http://10.30.2.238"; // Ip address of the server
+        serverAddress = "http://192.168.1.41"; // Ip address of the server
 
     // Get user position send from mapCtrl
     $scope.$on('positions', function(event, pos) {

@@ -1,10 +1,18 @@
-var serverUrl = "http://10.30.2.238",
-	datas = [],
+var serverUrl = "http://192.168.1.41",
+	facebookID = "",
 	videoMarkers = [],
 	nextVideo = [],
 	videoSource = new Array(),
 	videoCount,
 	count = 1;
+
+var idFb = {
+
+	initID: function(id){
+		facebookID = id;
+		init();
+	}
+}
 
 function getDatas(callback){
 	$.ajax({
@@ -20,6 +28,7 @@ function getDatas(callback){
 
 function parseDatas(data, callback){
 	var o = {};
+	
 	for(i = 0; i < data.length; i++){
 		if (!data[i].idFirstVideo.length) {
 			if (o[data[i]._id] === undefined) o[data[i]._id] = []; 
@@ -39,15 +48,7 @@ function countData(dataParse){
 	for(var i in dataParse){
 		dataParse[i].reverse();
 		if(dataParse[i].length <= 10){
-			// for(j = 0; j < dataParse.length; j++){
-				createSource(dataParse[i]);
-				// var video = document.querySelector('#video');
-				// 	video.setAttribute('src', serverUrl + ":8888/CadExq/node/uploads/" + dataParse[i][j].fileName);
-				// 	video.load();
-				// 	video.play();
-				// 	video.setAttribute('src', serverUrl + ":8888/CadExq/node/uploads/" + dataParse[i][j].fileName);
-
-			// }
+			createSource(dataParse[i]);
 		}
 	}
 }
@@ -82,16 +83,15 @@ function videoPlay(videoNum)
 }
 
 
-
 var init = function(){
 	getDatas(function(data){
 		if(data){
-			parseDatas(data, function(dataParse){
-				countData(dataParse);
-			});
+				parseDatas(data, function(dataParse){
+					countData(dataParse);
+				});
 		} else{
 			console.log("Can't get datas from server, check server conectivity");
 		}
 		
 	});
-}();
+};

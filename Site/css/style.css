@@ -491,14 +491,14 @@ max-height: 300px;
 
 /*...*/
 
+.hidden{
+	visibility: hidden;
+	display: none;
+}
+
 .head{
 	margin-top: 50px;
 	margin-bottom: 50px;
-}
-
-#fb-root{
-	height: 50px;
-	z-index: 999;
 }
 
 .container{
@@ -516,6 +516,12 @@ max-height: 300px;
 .imgTop{
 	width: 100%;
 	height: 600px;
+}
+
+#fb-root{
+	height: 50px;
+	z-index: 999;
+	float: left;
 }
 
 .fb-login-button{
@@ -536,13 +542,38 @@ max-height: 300px;
 
 .img{
 	background-image:url(images/backround-site.jpg);
-	height: 1000px;
+	position: relative;
 
 }
 
-#video{
+.header-acount{
+	background-color: white;
+	opacity: 0.4;
+	width: 100%;
+	height: 123px;
 	position: absolute;
+	z-index: 0;
+}
+
+.login-acount{
+	margin-top: 50px;
+	margin-left:100px;
+}
+
+.status-acount{
+	margin-top: 20px;
+	margin-left: 50px !important;
+}
+
+.video-n-share{
+	position: absolute;
+	top: 170px;
+	left: 35%;
 	z-index: 10;
-	margin-left: 500px;
+}
+
+.fb-share-button{
+	right: 50%;
+	top: 20px;
 }
 

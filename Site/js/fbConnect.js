@@ -73,7 +73,14 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
+      document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
+      idFb.initID(response.id);
+      // Select li to acces account part of the site
+      var liCompte = document.querySelector('.monCompte');
+      // If the li exist
+      if(liCompte){
+        // Remonve class hidden
+        liCompte.classList.remove('hidden');
+      }
     });
   }

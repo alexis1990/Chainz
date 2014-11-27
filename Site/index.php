@@ -4,6 +4,7 @@
 <title>chainz</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chainz communotary posting video" />
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/ddd9b74.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/e25a9c0.css" media="screen" />
@@ -11,6 +12,16 @@
 
 </head>
 <body>
+<!-- Google analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-56743223-1', 'auto');
+ga('send', 'pageview');
+</script>
 
 
 <div id="wrapper">
@@ -29,12 +40,15 @@
 						<li><a href="#comment-ca-marche">Comment ça marche</a>&nbsp;&nbsp;&nbsp;</li>
 						<li><a href="#lequipe">L’équipe</a></li>
 						<li><a href="#contacter">Nous contacter</a></li>
+						<li class="monCompte hidden"><a href="acount.html">Mon Compte</a></li>
 					  </ul>
 					</div><!--/.navbar-collapse -->
 				</div>
-			</div>
+				</div>
 			</div>
 		</div>
+	</div>
+</div>
 		<section class="login-box" id="content">
         <div class="block">
             <div class="inner width-2">
@@ -47,22 +61,7 @@
                     	<div id="fb-root"></div>
                     	<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
 						<div id="status"></div>
-						
-                        <!-- <a href="https://www.facebook.com" target="new" class="facebook">connexion with Facebook</a> -->
-                        <!--<a href="www.login-twitter" class="twitter">connexion with Twitter</a>-->
                     </div>
-                    <!-- <h2 class="head heading-title">Ou</h2>
-                    <p align="center"><em>Avec votre nom d'utilisateur ou votre email</em></p>
-	
-					<div class="box-form">
-                        <form action="gallery.html" method="post" novalidate>
-                            <p><input type="text" name="_username" placeholder=" email ou nom d'utilisateur" class="text-input focus"></p>
-                            <p><input type="password" name="_password" placeholder="mot de passe" class="text-input focus"></p>
-                             <p><input type="checkbox" id="remember_me" name="_remember_me" checked /> <label for="remember_me">Se souvenir de moi</label></p>
-                             <p><input type="submit" name="submit" value="CONNECTION" class="button large bold"></p>
-                            <p><a href="/forgot-password" class="underline"><strong> Vous avez oublier votre mot de passe?</a></strong></p>
-                        </form>
-                    </div> -->
 				
                 </div>
             </div>

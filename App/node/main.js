@@ -16,7 +16,7 @@ fs.exists(__dirname + '/uploads', function (exists) {
 });
 
 // Connect to database
-var url = "mongodb://10.30.2.238:27017/CadavreExquis";
+var url = "mongodb://192.168.1.41:27017/CadavreExquis";
 MongoClient.connect(url, {native_parser: true}, function (err, connection) {
     if (err) {
         console.log("Cannot connect to database " + url);
