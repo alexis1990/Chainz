@@ -1,4 +1,4 @@
-var serverUrl = "http://10.30.2.238",
+var serverUrl = "http://10.35.1.27",
 	facebookID = "",
 	videoMarkers = [],
 	nextVideo = [],
@@ -28,7 +28,7 @@ function getDatas(callback){
 
 function parseDatas(data, callback){
 	var o = {};
-	
+
 	for(i = 0; i < data.length; i++){
 		if (!data[i].idFirstVideo.length) {
 			if (o[data[i]._id] === undefined) o[data[i]._id] = []; 

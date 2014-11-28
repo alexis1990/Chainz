@@ -1,5 +1,5 @@
 app.factory('videosFactory', function($http) {
-    var serverURL = "http://10.30.2.238:3000";
+    var serverURL = "http://10.35.1.27:3000";
     // var videos = [];
 
     return {

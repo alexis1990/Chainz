@@ -1,11 +1,24 @@
 app.factory('videosFactory', function($http) {
-   var serverURL = "http://10.30.2.238:3000";
-   return{
-      getVideos : function() {
-          return $http({
-              url: serverURL + "/video",
-              method: 'GET'
-          })
-      }
-   }
+    var serverURL = "http://10.35.1.27:3000";
+    // var videos = [];
+
+    return {
+        videos: [],
+
+        getVideos: function() {
+            var self = this;
+            // self.videos = [];
+            return $http({
+                url: serverURL + "/video",
+                method: 'GET'
+            }).success(function(data) {
+                self.videos = data;
+                console.log('self.videos', self.videos);
+            })
+        },
+
+        addVideo: function(video) {
+            this.getVideos();
+        }
+    }
 })

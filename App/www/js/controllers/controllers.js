@@ -42,7 +42,7 @@ app.controller('PlaylistsCtrl', function($scope, $cordovaCapture, videosFactory)
         nextVideo = [],
         idFirstVideo = '',
         idFacebook,
-        serverURL = "http://10.30.2.238";
+        serverURL = "http://10.35.1.27";
 
     $scope.$on('positions', function(event, pos) {
         positions = pos;
@@ -60,8 +60,7 @@ app.controller('PlaylistsCtrl', function($scope, $cordovaCapture, videosFactory)
 
     $scope.$on('setVideo', function(event, nearestVideo) {
         var video = document.querySelector('#video');
-        var src = document.querySelector('#video > source');
-        video.setAttribute("src", serverURL + ":8888/CadExq/node/uploads/" + nearestVideo.fileName);
+        video.setAttribute("src", serverURL + ":8888/CadExq/App/node/uploads/" + nearestVideo.fileName);
         video.load();
     });
 

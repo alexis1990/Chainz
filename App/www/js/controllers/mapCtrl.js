@@ -78,6 +78,8 @@ app.controller('mapCtrl', function($scope, videosFactory) {
 
     // MULTIPLE MARKERS
     function createMarkers(data, center, map, callback) {
+        nextVideo = [],
+        videoMarkers = [];
         for (i = 0; i < data.length; i++) {
             // init markers for each markers in data
             if (data[i].lat && data[i].lng) {
@@ -150,7 +152,7 @@ app.controller('mapCtrl', function($scope, videosFactory) {
                 } else {
 
                     $scope.$emit('idFirstVideo', videoMarkers[i].id);
-                    videoChains.reverse();
+                    console.log(videoChains[0], videoChains);
                     $scope.$emit('setVideo', videoChains[0]);
                     $scope.$emit('showVideo', videoMarkers[i].markerRadius);
 

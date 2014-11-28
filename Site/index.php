@@ -91,17 +91,14 @@ ga('send', 'pageview');
 				</div>	
 				<div class="row top-height ">
 					<div class="mobils-box col-lg-4">
-						<img src="images/mobils-img.png"  alt="" />
 						<a href="#"><img src="images/play-icon.png"  alt="" /></a>
-						<p>Prendre une video perso ou suivant un thème</p>
+						<p>Créer une histoire en prennant une video</p>
 					</div>
 					<div class="mobils-box col-lg-4">
-						<img src="images/mobils-img.png"  alt="" />
 						<a href="#"><img src="images/share-icon.png"  alt="" /></a>
-						<p>Participez aux événements de la communauté, eux aux votres</p>
+						<p>Participez aux vidéos de la communauté, eux aux votres</p>
 					</div>
 					<div class="mobils-box col-lg-4">
-						<img class="desktop-icon" src="images/desktop-img.png"  alt="" />
 						<a href="#"><img src="images/look_video-icon.png"  alt="" /></a>
 						<p>Regardez le résulat quand la chaine est finie ! </p>
 					</div>
