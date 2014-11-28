@@ -152,7 +152,6 @@ app.controller('mapCtrl', function($scope, videosFactory) {
                 } else {
 
                     $scope.$emit('idFirstVideo', videoMarkers[i].id);
-                    console.log(videoChains[0], videoChains);
                     $scope.$emit('setVideo', videoChains[0]);
                     $scope.$emit('showVideo', videoMarkers[i].markerRadius);
 
@@ -166,9 +165,33 @@ app.controller('mapCtrl', function($scope, videosFactory) {
                 document.querySelector('.continueVideo').classList.add('hidden');
             }
 
+            // Check if there is more than 10 video on a marker 
+            checkNumberVideo(videoChains, videoMarkers[i], function(nb, thisVideoMarkers){
+                // if more than 10 videos on a marker
+                if(nb >= 10){
+                    document.querySelector('.takeVideo').classList.remove('hidden');
+                    document.querySelector('.continueVideo').classList.add('hidden');
+                    // Hide marker and marker radius
+                    thisVideoMarkers.setMap(null);
+                    thisVideoMarkers.markerRadius.setMap(null);
+              }
+            });
+
         }
 
-    };
+        // Check number of video
+        function checkNumberVideo(videoChains, thisVideoMarkers, callback){
+        var nb = 0;
+        for(i = 0; i < videoChains.length; i++){
+            nb++;
+        }
+        callback.call(this, nb, thisVideoMarkers);
+        }
+        
+    }
+
+});
 
 
-})
+
+

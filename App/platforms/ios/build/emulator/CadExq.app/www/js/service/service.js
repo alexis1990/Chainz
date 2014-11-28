@@ -13,6 +13,7 @@ app.factory('videosFactory', function($http) {
                 method: 'GET'
             }).success(function(data) {
                 self.videos = data;
+                console.log('self.videos', self.videos);
             })
         },
 

@@ -30,14 +30,17 @@ function parseDatas(data, callback){
 	var o = {};
 
 	for(i = 0; i < data.length; i++){
-		if (!data[i].idFirstVideo.length) {
-			if (o[data[i]._id] === undefined) o[data[i]._id] = []; 
-			o[data[i]._id].push(data[i]);
-		}
-		else {
-			if (o[data[i].idFirstVideo] === undefined) o[data[i].idFirstVideo] = [];
-			o[data[i].idFirstVideo].push(data[i]);
-		}
+		// if(data[i].idFacebook == facebookID){ // Commented to allow anyone to see videos on website
+			if (!data[i].idFirstVideo.length) {
+				if (o[data[i]._id] === undefined) o[data[i]._id] = []; 
+				o[data[i]._id].push(data[i]);
+			}
+			else {
+				if (o[data[i].idFirstVideo] === undefined) o[data[i].idFirstVideo] = [];
+				o[data[i].idFirstVideo].push(data[i]);
+			}
+			
+		// }
 
 	}
 	callback.call(this, o)
@@ -69,7 +72,6 @@ function myHandler() {
 		video.pause();
 	}
 	else{
-		console.log(count);
 		videoPlay(count);
 		count++;
 	}      

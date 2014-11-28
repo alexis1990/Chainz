@@ -91,7 +91,7 @@ app.controller('PlaylistsCtrl', function($scope, $cordovaCapture, videosFactory)
                 "lng": positions.lng,
                 "date": new Date().getTime(),
                 "idFirstVideo": idFirstVideo,
-                "idFacebook": idFacebook
+                "idFacebook": "10204667759827514"
             };
 
             ft.upload(path, serverURL + ":3000/video",
@@ -148,7 +148,7 @@ app.controller('PlaylistsCtrl', function($scope, $cordovaCapture, videosFactory)
             options.params = { // Whatever you populate options.params with, will be available in req.body at the server-side.
                 "date": new Date().getTime(),
                 "idFirstVideo": idFirstVideo,
-                "idFacebook": idFacebook
+                "idFacebook": "10204667759827514"
 
             };
 
