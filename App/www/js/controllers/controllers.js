@@ -1,6 +1,6 @@
 var app = angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
     // Form data for the login modal
     $scope.loginData = {};
 
@@ -35,15 +35,14 @@ var app = angular.module('starter.controllers', [])
 
 
 
-.controller('PlaylistsCtrl', function($scope, $cordovaCapture, videosFactory) {
+app.controller('PlaylistsCtrl', function($scope, $cordovaCapture, videosFactory) {
 
     var positions = {},
         videoMarkers = [],
         nextVideo = [],
         idFirstVideo = '',
         idFacebook,
-        serverURL = "http://10.30.1.49:3000",
-        server = "http://10.30.1.49";
+        serverURL = "http://10.30.2.238";
 
     $scope.$on('positions', function(event, pos) {
         positions = pos;
@@ -62,7 +61,7 @@ var app = angular.module('starter.controllers', [])
     $scope.$on('setVideo', function(event, nearestVideo) {
         var video = document.querySelector('#video');
         var src = document.querySelector('#video > source');
-        video.setAttribute("src", server + "/CadExq_V3/node/uploads/" + nearestVideo.fileName);
+        video.setAttribute("src", serverURL + ":8888/CadExq/node/uploads/" + nearestVideo.fileName);
         video.load();
     });
 
@@ -96,7 +95,7 @@ var app = angular.module('starter.controllers', [])
                 "idFacebook": idFacebook
             };
 
-            ft.upload(path, serverURL + "/video",
+            ft.upload(path, serverURL + ":3000/video",
                 function(result) {
                     console.log('Upload success: ' + result.responseCode);
                     console.log(result.bytesSent + ' bytes sent');
@@ -154,7 +153,7 @@ var app = angular.module('starter.controllers', [])
 
             };
 
-            ft.upload(path, serverURL + "/video",
+            ft.upload(path, serverURL + ":3000/video",
                 function(result) {
                     console.log('Upload success: ' + result.responseCode);
                     console.log(result.bytesSent + ' bytes sent');

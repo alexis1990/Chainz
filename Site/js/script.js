@@ -1,4 +1,4 @@
-var serverUrl = "http://192.168.1.41",
+var serverUrl = "http://10.30.2.238",
 	facebookID = "",
 	videoMarkers = [],
 	nextVideo = [],
